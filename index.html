@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <h1>Register</h1>
+    <br/>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your Full Name" minlength="3" maxlength="10" required>
+          </div>
+          <br/>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email address" pattern=".+@.+\..+"
+            title="Enter in the format of abc@email.com" maxlength="8" required>
+          </div>
+          <br/>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <select>
+                <option>+91</option>
+                <option>+92</option>
+                <option>+93</option>
+                <option>+94</option>
+                <option>+95</option>
+            </select>
+            <input type="number" min="10" max="10" ondrop="return false;" onpaste="return false;" placeholder="Enter your number" required title="Enter a valid number">
+          </div>
+          <br/>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter your password" maxlength="8" required>
+          </div>
+          <br/>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" placeholder="Confirm your password" maxlength="8" required>
+          </div>
+          <br/>
+          <tr >
+          </div>
+        </div>
+        <div class="declare">
+            <input type="checkbox" checked> 
+            <label for="declaration">
+              <span>I hereby declare that all the information furnished above is true to the best of my belief</span>
+            </label>
+            <br/>
+            <input type="checkbox" required>
+            <label for="declaration">
+                <span>I hereby declare that all the information furnished above is true to the best of my belief</span>
+            </label>
+        </div>
+        <br/>
+        <button>Register</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
